@@ -1,3 +1,3 @@
-# Pata Livre
+# Passeio Feliz
 
-Bem-vindo ao Pata Livre, uma aplicação para ajudar você a encontrar um novo amigo!
+Bem-vindo ao Passeio Feliz, uma landing page para um serviço de passeio e cuidados com cães.
