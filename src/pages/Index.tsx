@@ -27,7 +27,7 @@ const pricing = [
     subtitle: "Semanal ou Mensal",
     price: "R$ 30,00",
     per: "/ hora",
-    features: ["Valor para apenas um cachorro"],
+    features: ["Valor para apenas um cachorro", "Válido para qualquer tamanho"],
     popular: true,
   },
   {
