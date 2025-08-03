@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import otavioSrc from "../assets/images/otavio.png";
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
         <CardHeader className="text-center">
           <div className="flex justify-center mb-4">
             <Avatar className="h-24 w-24">
-              <AvatarImage src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?q=80&w=2070&auto=format&fit=crop" alt="Otavio" />
+              <AvatarImage src={otavioSrc} alt="Otavio" />
               <AvatarFallback>O</AvatarFallback>
             </Avatar>
           </div>
