@@ -4,7 +4,7 @@ import logoSrc from "../assets/images/logotipo.png";
 export const Logo = () => {
   return (
     <Link to="/">
-      <img src={logoSrc} alt="Pata Livre" className="h-[100px] w-auto" />
+      <img src={logoSrc} alt="Pata Livre" className="h-[50px] w-auto" />
     </Link>
   );
 };
