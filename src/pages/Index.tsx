@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { CheckCircle, Dog, Home, ShieldCheck, Star, Info } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const services = [
   {
@@ -53,6 +54,14 @@ const pricing = [
     per: "/ hora",
     features: ["Valor para até 03 (três) Pets do mesmo dono", "Válido apenas para Raças Pequenas"],
     popular: false,
+  },
+];
+
+const testimonials = [
+  {
+    quote: "Super indico!! Minhas cachorras já ficam doidas quando sabem que o Otavio está esperando. 🥰 🐶",
+    author: "Ana Leticia",
+    avatarFallback: "AL",
   },
 ];
 
@@ -161,6 +170,29 @@ const Index = () => {
                 </div>
               </div>
            </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section id="testimonials" className="py-16 bg-secondary">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">O que nossos clientes dizem</h2>
+          <p className="text-center text-muted-foreground mb-12">A opinião de quem confia no nosso trabalho.</p>
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-2xl mx-auto">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="shadow-lg">
+                <CardContent className="p-8 flex flex-col items-center text-center">
+                  <Avatar className="h-16 w-16 mb-4">
+                    <AvatarFallback className="text-xl bg-primary/20 text-primary font-bold">{testimonial.avatarFallback}</AvatarFallback>
+                  </Avatar>
+                  <blockquote className="text-lg text-gray-700 italic mb-4">
+                    <p>"{testimonial.quote}"</p>
+                  </blockquote>
+                  <p className="font-semibold text-gray-800">- {testimonial.author}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
     </div>
