@@ -7,7 +7,7 @@ const services = [
   {
     icon: <ShieldCheck className="h-10 w-10 text-primary" />,
     title: "Passeios Seguros",
-    description: "Passeios supervisionados e cheios de diversão no Parque Piqueri, garantindo a segurança e o bem-estar do seu pet.",
+    description: "Passeios supervisionados e cheios de diversão no Parque Piqueri, garantindo a segurança e o bem-estar do seu Pet.",
   },
   {
     icon: <Dog className="h-10 w-10 text-primary" />,
