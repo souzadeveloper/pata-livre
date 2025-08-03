@@ -27,7 +27,7 @@ const pricing = [
     subtitle: "Semanal ou Mensal",
     price: "R$ 30,00",
     per: "/ hora",
-    features: ["Valor para apenas 01 Pet", "Válido para Raças Pequenas e Grandes"],
+    features: ["Valor para apenas 01 (um) Pet", "Válido para Raças Pequenas e Grandes"],
     popular: true,
   },
   {
@@ -35,7 +35,7 @@ const pricing = [
     subtitle: "Passeio único",
     price: "R$ 40,00",
     per: "/ hora",
-    features: ["Valor para apenas 01 Pet", "Válido para Raças Pequenas e Grandes"],
+    features: ["Valor para apenas 01 (um) Pet", "Válido para Raças Pequenas e Grandes"],
     popular: false,
   },
   {
@@ -51,7 +51,7 @@ const pricing = [
     subtitle: "Passeio único",
     price: "R$ 50,00",
     per: "/ hora",
-    features: ["Valor para até 03 Pets do mesmo dono", "Válido apenas para Raças Pequenas"],
+    features: ["Valor para até 03 (três) Pets do mesmo dono", "Válido apenas para Raças Pequenas"],
     popular: false,
   },
 ];
