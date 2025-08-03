@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { CheckCircle, Dog, Home, ShieldCheck, Star, Info } from "lucide-react";
+import { CheckCircle, Dog, Home, ShieldCheck, Star } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Alert, AlertDescription } from "@/components/ui/alert";
 
 const services = [
   {
@@ -24,19 +23,35 @@ const services = [
 
 const pricing = [
   {
-    title: "Pacotes",
+    title: "Pacotes (Individual)",
     subtitle: "Semanal ou Mensal",
     price: "R$ 30,00",
     per: "/ hora",
-    features: ["Valor por cachorro", "Adicional por cachorro: R$ 10,00/hora"],
+    features: ["Valor para apenas um cachorro", "Válido para qualquer tamanho"],
     popular: true,
   },
   {
-    title: "Avulso",
+    title: "Avulso (Individual)",
     subtitle: "Passeio único",
     price: "R$ 40,00",
     per: "/ hora",
-    features: ["Valor por cachorro", "Adicional por cachorro: R$ 15,00/hora"],
+    features: ["Valor para apenas um cachorro", "Válido para qualquer tamanho"],
+    popular: false,
+  },
+  {
+    title: "Pacotes (Em grupo)",
+    subtitle: "Semanal ou Mensal",
+    price: "R$ 40,00",
+    per: "/ hora",
+    features: ["Valor para até 3 cachorros do mesmo dono", "Válido apenas para Cachorros de Raça Pequena"],
+    popular: false,
+  },
+  {
+    title: "Avulso (Em grupo)",
+    subtitle: "Passeio único",
+    price: "R$ 50,00",
+    per: "/ hora",
+    features: ["Valor para até 3 cachorros do mesmo dono", "Válido apenas para Cachorros de Raça Pequena"],
     popular: false,
   },
 ];
@@ -113,14 +128,7 @@ const Index = () => {
               </Card>
             ))}
           </div>
-          <div className="max-w-4xl mx-auto mt-8">
-            <Alert className="bg-accent/10 border-accent text-accent-foreground">
-              <Info className="h-5 w-5 text-accent" />
-              <AlertDescription className="font-semibold">
-                Valores a combinar para necessidades especiais. Entre em contato para mais detalhes!
-              </AlertDescription>
-            </Alert>
-          </div>
+           <p className="text-center text-muted-foreground mt-8">Valores a combinar para necessidades especiais.</p>
         </div>
       </section>
       
