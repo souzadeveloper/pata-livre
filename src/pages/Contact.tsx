@@ -22,7 +22,7 @@ const Contact = () => {
             <MapPin className="h-6 w-6 text-primary" />
             <div className="text-lg">
               <p className="font-semibold">Local de Atendimento</p>
-              <p className="text-sm text-muted-foreground">Atendimento exclusivo para moradores do condomínio.</p>
+              <p className="text-sm text-muted-foreground">Atendimento exclusivo para moradores do condomínio Scena Tatuapé.</p>
             </div>
           </div>
 
