@@ -104,9 +104,6 @@ const Index = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button className="w-full" variant={plan.popular ? "default" : "outline"}>
-                    <Link to="/contact">Contratar</Link>
-                  </Button>
                 </CardContent>
               </Card>
             ))}
