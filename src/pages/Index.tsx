@@ -128,7 +128,16 @@ const Index = () => {
               </Card>
             ))}
           </div>
-           <p className="text-center text-muted-foreground mt-8">Valores a combinar para necessidades especiais.</p>
+          <div className="max-w-2xl mx-auto mt-12">
+            <Card className="bg-transparent border-2 border-dashed border-primary">
+                <CardContent className="p-6 text-center flex items-center justify-center space-x-4">
+                    <Info className="h-6 w-6 text-primary flex-shrink-0" />
+                    <p className="text-lg font-medium text-gray-800">
+                        Valores a combinar para necessidades especiais. <Link to="/contact" className="font-bold text-primary hover:underline">Entre em contato!</Link>
+                    </p>
+                </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
       
