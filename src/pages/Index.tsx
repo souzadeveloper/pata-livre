@@ -43,7 +43,7 @@ const pricing = [
     subtitle: "Semanal ou Mensal",
     price: "R$ 40,00",
     per: "/ hora",
-    features: ["Valor para até 03 Pets do mesmo dono", "Válido apenas para Raças Pequenas"],
+    features: ["Valor para até 03 (três) Pets do mesmo dono", "Válido apenas para Raças Pequenas"],
     popular: false,
   },
   {
