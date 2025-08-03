@@ -35,7 +35,7 @@ const pricing = [
     subtitle: "Passeio único",
     price: "R$ 40,00",
     per: "/ hora",
-    features: ["Valor por cachorro", "Adicional por cachorro: R$ 15,00/hora"],
+    features: ["Valor para apenas um cachorro", "Válido para qualquer tamanho"],
     popular: false,
   },
   {
@@ -49,9 +49,9 @@ const pricing = [
   {
     title: "Avulso (Em grupo)",
     subtitle: "Passeio único",
-    price: "R$ 40,00",
+    price: "R$ 50,00",
     per: "/ hora",
-    features: ["Valor por cachorro", "Adicional por cachorro: R$ 15,00/hora"],
+    features: ["Valor para até 3 cachorros do mesmo dono", "Válido apenas para Cachorros de Raça Pequena"],
     popular: false,
   },
 ];
