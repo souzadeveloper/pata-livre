@@ -27,7 +27,6 @@ const Contact = () => {
           </div>
 
           <Alert className="bg-primary/10 border-primary text-primary">
-
             <AlertDescription className="font-semibold">
               Em breve atendendo a outros condomínios da região.
             </AlertDescription>
