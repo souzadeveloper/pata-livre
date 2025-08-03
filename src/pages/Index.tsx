@@ -121,7 +121,7 @@ const Index = () => {
       {/* Why Us Section */}
       <section id="why-us" className="py-16">
         <div className="container mx-auto px-4 text-center">
-           <h2 className="text-3xl font-bold text-gray-800 mb-12">Por que escolher o Passeio Feliz?</h2>
+           <h2 className="text-3xl font-bold text-gray-800 mb-12">Por que escolher a Pata Livre?</h2>
            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div className="flex items-center space-x-4 p-4">
                 <Star className="h-8 w-8 text-accent"/>

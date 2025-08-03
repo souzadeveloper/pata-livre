@@ -25,7 +25,7 @@ const About = () => {
             Ele não só garante a atividade física e a diversão do seu melhor amigo, mas também oferece visitas em domicílio para verificar se está tudo bem, garantindo que seu pet tenha água, comida e muito carinho na sua ausência.
           </p>
           <p>
-            Com o "Passeio Feliz", Otavio une sua paixão por animais com o desejo de ajudar sua comunidade, sempre com muita responsabilidade e amor.
+            Com a "Pata Livre", Otavio une sua paixão por animais com o desejo de ajudar sua comunidade, sempre com muita responsabilidade e amor.
           </p>
         </CardContent>
       </Card>
