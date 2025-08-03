@@ -44,12 +44,16 @@ const Index = () => {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 bg-secondary">
+      <section
+        className="relative py-20 md:py-32 bg-cover bg-center"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1552053831-71594a27632d?q=80&w=1924&auto=format&fit=crop')" }}
+      >
+        <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="container mx-auto px-4 text-center z-10 relative">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4">
             Seu melhor amigo em boas mãos
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             Oferecemos passeios divertidos e cuidados responsáveis para que seu cão seja sempre feliz e saudável.
           </p>
         </div>
