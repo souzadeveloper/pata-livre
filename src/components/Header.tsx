@@ -12,9 +12,6 @@ const Header = () => {
           <Link to="/about" className="text-gray-600 hover:text-primary transition-colors">Sobre</Link>
           <Link to="/contact" className="text-gray-600 hover:text-primary transition-colors">Contato</Link>
         </nav>
-        <Button asChild>
-          <Link to="/contact">Agende um Passeio</Link>
-        </Button>
       </div>
     </header>
   );
