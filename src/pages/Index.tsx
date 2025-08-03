@@ -27,11 +27,11 @@ const pricing = [
     subtitle: "Semanal ou Mensal",
     price: "R$ 30,00",
     per: "/ hora",
-    features: ["Valor por cachorro", "Adicional por cachorro: R$ 10,00/hora"],
+    features: ["Valor para apenas um cachorro"],
     popular: true,
   },
   {
-    title: "Avulso",
+    title: "Avulso (Individual)",
     subtitle: "Passeio único",
     price: "R$ 40,00",
     per: "/ hora",
@@ -47,7 +47,7 @@ const pricing = [
     popular: false,
   },
   {
-    title: "Avulso",
+    title: "Avulso (Em grupo)",
     subtitle: "Passeio único",
     price: "R$ 40,00",
     per: "/ hora",
