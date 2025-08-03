@@ -40,10 +40,10 @@ const pricing = [
   },
   {
     title: "Pacotes (Em grupo)",
-    subtitle: "Passeio único",
+    subtitle: "Semanal ou Mensal",
     price: "R$ 40,00",
     per: "/ hora",
-    features: ["Valor por cachorro", "Adicional por cachorro: R$ 15,00/hora"],
+    features: ["Valor para até 3 cachorros do mesmo dono", "Cachorros de Raça Pequena"],
     popular: false,
   },
   {
