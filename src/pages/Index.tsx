@@ -23,7 +23,7 @@ const services = [
   {
     icon: <Truck className="h-10 w-10 text-primary" />,
     title: "Pet Delivery",
-    description: "Levamos e buscamos seu cão nos Pet Shops e Creches das proximidades, com horários flexíveis.",
+    description: "Levamos e buscamos seu cão nos Pet Shops e Creches das proximidades, nos horários definidos.",
   },
 ];
 
