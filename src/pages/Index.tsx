@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { CheckCircle, Dog, Home, ShieldCheck, Star, Info } from "lucide-react";
+import { CheckCircle, Dog, Home, ShieldCheck, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const services = [
@@ -23,19 +23,35 @@ const services = [
 
 const pricing = [
   {
-    title: "Pacotes",
+    title: "Pacotes (Individual)",
     subtitle: "Semanal ou Mensal",
     price: "R$ 30,00",
     per: "/ hora",
-    features: ["Valor por cachorro", "Adicional por cachorro: R$ 10,00/hora"],
+    features: ["Valor para apenas um cachorro", "Válido para qualquer tamanho"],
     popular: true,
   },
   {
-    title: "Avulso",
+    title: "Avulso (Individual)",
     subtitle: "Passeio único",
     price: "R$ 40,00",
     per: "/ hora",
-    features: ["Valor por cachorro", "Adicional por cachorro: R$ 15,00/hora"],
+    features: ["Valor para apenas um cachorro", "Válido para qualquer tamanho"],
+    popular: false,
+  },
+  {
+    title: "Pacotes (Em grupo)",
+    subtitle: "Semanal ou Mensal",
+    price: "R$ 40,00",
+    per: "/ hora",
+    features: ["Valor para até 3 cachorros do mesmo dono", "Válido apenas para Cachorros de Raça Pequena"],
+    popular: false,
+  },
+  {
+    title: "Avulso (Em grupo)",
+    subtitle: "Passeio único",
+    price: "R$ 50,00",
+    per: "/ hora",
+    features: ["Valor para até 3 cachorros do mesmo dono", "Válido apenas para Cachorros de Raça Pequena"],
     popular: false,
   },
 ];
@@ -112,16 +128,7 @@ const Index = () => {
               </Card>
             ))}
           </div>
-          <div className="max-w-2xl mx-auto mt-12">
-            <Card className="bg-transparent border-2 border-dashed border-primary">
-                <CardContent className="p-6 text-center flex items-center justify-center space-x-4">
-                    <Info className="h-6 w-6 text-primary flex-shrink-0" />
-                    <p className="text-lg font-medium text-gray-800">
-                        Valores a combinar para necessidades especiais. <Link to="/contact" className="font-bold text-primary hover:underline">Entre em contato!</Link>
-                    </p>
-                </CardContent>
-            </Card>
-          </div>
+           <p className="text-center text-muted-foreground mt-8">Valores a combinar para necessidades especiais.</p>
         </div>
       </section>
       
