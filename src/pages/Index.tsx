@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { CheckCircle, Dog, Home, ShieldCheck, Star, Info, Camera, Calendar, HeartHandshake } from "lucide-react";
+import { CheckCircle, Dog, Home, ShieldCheck, Star, Info, Camera, Calendar, HeartHandshake, ListChecks, Smile } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
@@ -90,6 +90,24 @@ const whyUsItems = [
     icon: <Camera className="h-8 w-8 text-accent"/>,
     title: "Acompanhamento Pós-Passeio",
     description: "Enviamos um relatório com fotos e informações após cada passeio.",
+  },
+];
+
+const requirements = [
+  {
+    icon: <ListChecks className="h-10 w-10 text-primary" />,
+    title: "Coleira e Guia",
+    description: "O cão deve possuir coleira e guia em bom estado para garantir a segurança durante o passeio.",
+  },
+  {
+    icon: <ShieldCheck className="h-10 w-10 text-primary" />,
+    title: "Vacinas em Dia",
+    description: "Para a segurança de todos, é fundamental que o cão esteja com as vacinas em dia.",
+  },
+  {
+    icon: <Smile className="h-10 w-10 text-primary" />,
+    title: "Cão Sociável",
+    description: "O cão precisa ser dócil para não estranhar pessoas que ele não conhece e interagir bem.",
   },
 ];
 
@@ -196,8 +214,31 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Requirements Section */}
+      <section id="requirements" className="py-16 bg-secondary">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">Requisitos Essenciais</h2>
+          <p className="text-center text-muted-foreground mb-12">Para garantir um passeio seguro e divertido, pedimos atenção aos seguintes pontos:</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {requirements.map((req) => (
+              <Card key={req.title} className="text-center shadow-lg">
+                <CardHeader>
+                  <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
+                    {req.icon}
+                  </div>
+                  <CardTitle>{req.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{req.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-16 bg-secondary">
+      <section id="testimonials" className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">O que nossos clientes dizem</h2>
           <p className="text-center text-muted-foreground mb-12">A opinião de quem confia no nosso trabalho.</p>
