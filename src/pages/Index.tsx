@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { CheckCircle, Dog, Home, ShieldCheck, Star, Info } from "lucide-react";
+import { CheckCircle, Dog, Home, ShieldCheck, Star, Info, Camera, Calendar, HeartHandshake } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
@@ -62,6 +62,34 @@ const testimonials = [
     quote: "Super indico!! Minhas cachorras já ficam doidas quando sabem que o Otavio está esperando. 🥰 🐶",
     author: "Ana Leticia",
     avatarFallback: "AL",
+  },
+];
+
+const whyUsItems = [
+  {
+    icon: <Star className="h-8 w-8 text-accent"/>,
+    title: "Horários Flexíveis",
+    description: "Adaptamos nossos horários para melhor atender à sua rotina e a do seu Pet.",
+  },
+  {
+    icon: <HeartHandshake className="h-8 w-8 text-accent"/>,
+    title: "Amor e Responsabilidade",
+    description: "Cuidamos do seu melhor amigo com o máximo de carinho, cuidado e segurança.",
+  },
+  {
+    icon: <Calendar className="h-8 w-8 text-accent"/>,
+    title: "Frequência Personalizada",
+    description: "Passeios diários, alternados ou avulsos, conforme a sua necessidade.",
+  },
+  {
+    icon: <ShieldCheck className="h-8 w-8 text-accent"/>,
+    title: "Caminhadas Seguras",
+    description: "Atenção total ao seu pet durante todo o percurso, garantindo um passeio tranquilo.",
+  },
+  {
+    icon: <Camera className="h-8 w-8 text-accent"/>,
+    title: "Acompanhamento Pós-Passeio",
+    description: "Enviamos um relatório com fotos e informações após cada passeio.",
   },
 ];
 
@@ -154,21 +182,16 @@ const Index = () => {
       <section id="why-us" className="py-16">
         <div className="container mx-auto px-4 text-center">
            <h2 className="text-3xl font-bold text-gray-800 mb-12">Por que escolher a Pata Livre?</h2>
-           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="flex items-center space-x-4 p-4">
-                <Star className="h-8 w-8 text-accent"/>
-                <div>
-                  <h3 className="text-xl font-semibold text-left">Horários Flexíveis</h3>
-                  <p className="text-muted-foreground text-left">Adaptamos nossos horários para melhor atender à sua rotina e a do seu Pet.</p>
+           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {whyUsItems.map((item) => (
+                <div key={item.title} className="flex items-start space-x-4 p-4">
+                  <div className="flex-shrink-0">{item.icon}</div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-left">{item.title}</h3>
+                    <p className="text-muted-foreground text-left">{item.description}</p>
+                  </div>
                 </div>
-              </div>
-               <div className="flex items-center space-x-4 p-4">
-                <Star className="h-8 w-8 text-accent"/>
-                <div>
-                  <h3 className="text-xl font-semibold text-left">Amor e Responsabilidade</h3>
-                  <p className="text-muted-foreground text-left">Cuidamos do seu melhor amigo com o máximo de carinho, cuidado e segurança.</p>
-                </div>
-              </div>
+              ))}
            </div>
         </div>
       </section>
