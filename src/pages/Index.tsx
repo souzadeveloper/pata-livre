@@ -27,7 +27,7 @@ const pricing = [
     subtitle: "Semanal ou Mensal",
     price: "R$ 30,00",
     per: "/ hora",
-    features: ["Valor para apenas um cachorro", "Válido para qualquer tamanho"],
+    features: ["Valor para apenas um cachorro", "Válido para Raças Pequenas e Grandes"],
     popular: true,
   },
   {
@@ -35,7 +35,7 @@ const pricing = [
     subtitle: "Passeio único",
     price: "R$ 40,00",
     per: "/ hora",
-    features: ["Valor para apenas um cachorro", "Válido para qualquer tamanho"],
+    features: ["Valor para apenas um cachorro", "Válido para Raças Pequenas e Grandes"],
     popular: false,
   },
   {
@@ -43,7 +43,7 @@ const pricing = [
     subtitle: "Semanal ou Mensal",
     price: "R$ 40,00",
     per: "/ hora",
-    features: ["Valor para até 3 cachorros do mesmo dono", "Válido apenas para Cachorros de Raça Pequena"],
+    features: ["Valor para até 3 cachorros do mesmo dono", "Válido apenas para Raças Pequenas"],
     popular: false,
   },
   {
@@ -51,7 +51,7 @@ const pricing = [
     subtitle: "Passeio único",
     price: "R$ 50,00",
     per: "/ hora",
-    features: ["Valor para até 3 cachorros do mesmo dono", "Válido apenas para Cachorros de Raça Pequena"],
+    features: ["Valor para até 3 cachorros do mesmo dono", "Válido apenas para Raças Pequenas"],
     popular: false,
   },
 ];
@@ -150,7 +150,7 @@ const Index = () => {
                 <Star className="h-8 w-8 text-accent"/>
                 <div>
                   <h3 className="text-xl font-semibold text-left">Horários Flexíveis</h3>
-                  <p className="text-muted-foreground text-left">Adaptamos nossos horários para melhor atender à sua rotina e a do seu pet.</p>
+                  <p className="text-muted-foreground text-left">Adaptamos nossos horários para melhor atender à sua rotina e a do seu Pet.</p>
                 </div>
               </div>
                <div className="flex items-center space-x-4 p-4">
