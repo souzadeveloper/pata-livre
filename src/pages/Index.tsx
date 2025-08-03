@@ -43,7 +43,7 @@ const pricing = [
     subtitle: "Semanal ou Mensal",
     price: "R$ 40,00",
     per: "/ hora",
-    features: ["Valor para até 3 cachorros do mesmo dono", "Cachorros de Raça Pequena"],
+    features: ["Valor para até 3 cachorros do mesmo dono", "Válido apenas para Cachorros de Raça Pequena"],
     popular: false,
   },
   {
