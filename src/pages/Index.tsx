@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2, Info } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "../assets/images/hero-image.jpg";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
 const services = [
@@ -32,6 +31,8 @@ const features = [
 ];
 
 const Index = () => {
+  const heroImage = "https://images.unsplash.com/photo-1552053831-71594a27632d?q=80&w=1924&auto=format&fit=crop";
+
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow">
