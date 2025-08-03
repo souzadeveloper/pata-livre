@@ -38,6 +38,22 @@ const pricing = [
     features: ["Valor por cachorro", "Adicional por cachorro: R$ 15,00/hora"],
     popular: false,
   },
+  {
+    title: "Avulso",
+    subtitle: "Passeio único",
+    price: "R$ 40,00",
+    per: "/ hora",
+    features: ["Valor por cachorro", "Adicional por cachorro: R$ 15,00/hora"],
+    popular: false,
+  },
+  {
+    title: "Avulso",
+    subtitle: "Passeio único",
+    price: "R$ 40,00",
+    per: "/ hora",
+    features: ["Valor por cachorro", "Adicional por cachorro: R$ 15,00/hora"],
+    popular: false,
+  },
 ];
 
 const Index = () => {
