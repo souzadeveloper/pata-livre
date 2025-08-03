@@ -16,16 +16,16 @@ const About = () => {
         </CardHeader>
         <CardContent className="text-lg text-gray-700 space-y-4">
           <p>
-            Otavio é um jovem de 13 anos, extremamente responsável e um verdadeiro amante dos animais. Desde pequeno, ele tem uma conexão especial com os pets, especialmente com cães.
+            Otavio é um jovem de 13 anos, extremamente responsável e um verdadeiro amante dos animais. Desde pequeno, ele tem uma conexão especial com os Pets, especialmente com cães.
           </p>
           <p>
-            Vendo a necessidade de muitos vizinhos que trabalham fora e não têm tempo para passear com seus cãezinhos, Otavio decidiu usar seu tempo livre para oferecer um serviço de passeio e cuidados.
+            Vendo a necessidade de muitos vizinhos que trabalham fora e não têm tempo para passear com seus cãezinhos, Otavio decidiu usar seu tempo livre para oferecer serviços de passeio e cuidados.
           </p>
           <p>
-            Ele não só garante a atividade física e a diversão do seu melhor amigo, mas também oferece visitas em domicílio para verificar se está tudo bem, garantindo que seu pet tenha água, comida e muito carinho na sua ausência.
+            Ele não só garante a atividade física e a diversão do seu melhor amigo, mas também oferece visitas em domicílio para verificar se está tudo bem, garantindo que seu Pet tenha água, comida e muito carinho na sua ausência.
           </p>
           <p>
-            Com a "Pata Livre", Otavio une sua paixão por animais com o desejo de ajudar sua comunidade, sempre com muita responsabilidade e amor.
+            Com a "Pata Livre", Otavio une sua paixão por animais com o desejo de ajudar profissionalmente as pessoas que possuem Pets, sempre com muita responsabilidade e amor.
           </p>
         </CardContent>
       </Card>
