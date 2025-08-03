@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { CheckCircle, Dog, Home, ShieldCheck, Star, Info, Camera, Calendar, HeartHandshake, ListChecks, Smile } from "lucide-react";
+import { CheckCircle, Dog, Home, ShieldCheck, Star, Info, Camera, Calendar, HeartHandshake, ListChecks, Smile, Truck } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
@@ -8,7 +8,7 @@ const services = [
   {
     icon: <ShieldCheck className="h-10 w-10 text-primary" />,
     title: "Passeios Seguros",
-    description: "Passeios supervisionados e cheios de diversão no Parque Piqueri, garantindo a segurança e o bem-estar do seu Pet.",
+    description: "Passeios supervisionados e cheios de diversão, garantindo a segurança e o bem-estar do seu Pet.",
   },
   {
     icon: <Dog className="h-10 w-10 text-primary" />,
@@ -19,6 +19,11 @@ const services = [
     icon: <Home className="h-10 w-10 text-primary" />,
     title: "Home Pet",
     description: "Cuidamos do seu cão em domicílio, garantindo que ele tenha comida, água e companhia quando você não estiver.",
+  },
+  {
+    icon: <Truck className="h-10 w-10 text-primary" />,
+    title: "Pet Delivery",
+    description: "Levamos e buscamos seu cão nos Pet Shops e Creches das proximidades, com horários flexíveis.",
   },
 ];
 
@@ -135,7 +140,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">Nossos Serviços</h2>
           <p className="text-center text-muted-foreground mb-12">Tudo o que seu Pet precisa para um dia incrível.</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service) => (
               <Card key={service.title} className="text-center shadow-lg">
                 <CardHeader>
