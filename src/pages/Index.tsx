@@ -7,7 +7,7 @@ const services = [
   {
     icon: <ShieldCheck className="h-10 w-10 text-primary" />,
     title: "Passeios Seguros",
-    description: "Passeios supervisionados e cheios de diversão no Parque Piqueri, garantindo a segurança e o bem-estar do seu pet.",
+    description: "Passeios supervisionados e cheios de diversão, garantindo a segurança e o bem-estar do seu pet.",
   },
   {
     icon: <Dog className="h-10 w-10 text-primary" />,
@@ -41,17 +41,23 @@ const pricing = [
 ];
 
 const Index = () => {
+  const heroImage = "https://images.unsplash.com/photo-1534351450189-18a711921742?q=80&w=1974&auto=format&fit=crop";
+
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4 text-center z-10 relative">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4">
+      <section className="relative h-[60vh] bg-cover bg-center text-white flex items-center justify-center" style={{ backgroundImage: `url(${heroImage})` }}>
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="relative z-10 text-center p-4">
+          <h1 className="text-4xl md:text-6xl font-bold drop-shadow-lg">
             Seu melhor amigo em boas mãos
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto drop-shadow-md">
             Oferecemos passeios divertidos e cuidados responsáveis para que seu cão seja sempre feliz e saudável.
           </p>
+          <Button asChild size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground">
+            <Link to="/contact">Entre em Contato</Link>
+          </Button>
         </div>
       </section>
 
@@ -62,7 +68,7 @@ const Index = () => {
           <p className="text-center text-muted-foreground mb-12">Tudo o que seu pet precisa para um dia incrível.</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service) => (
-              <Card key={service.title} className="text-center shadow-lg">
+              <Card key={service.title} className="text-center shadow-lg hover:shadow-xl transition-shadow">
                 <CardHeader>
                   <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
                     {service.icon}
@@ -85,7 +91,7 @@ const Index = () => {
           <p className="text-center text-muted-foreground mb-12">Escolha o plano ideal para você e seu melhor amigo.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {pricing.map((plan) => (
-              <Card key={plan.title} className={`shadow-xl ${plan.popular ? 'border-primary border-2' : ''}`}>
+              <Card key={plan.title} className={`shadow-xl transition-all ${plan.popular ? 'border-primary border-2 scale-105' : 'hover:scale-105'}`}>
                 <CardHeader className="text-center">
                   {plan.popular && <div className="text-sm font-bold text-primary mb-2">MAIS POPULAR</div>}
                   <CardTitle className="text-2xl">{plan.title}</CardTitle>
