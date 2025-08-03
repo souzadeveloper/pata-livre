@@ -25,7 +25,7 @@ const About = () => {
             Ele não só garante a atividade física e a diversão do seu melhor amigo, mas também oferece visitas em domicílio para verificar se está tudo bem, garantindo que seu Pet tenha água, comida e muito carinho na sua ausência.
           </p>
           <p>
-            Com a "Pata Livre", Otavio une sua paixão por animais com o desejo de ajudar profissionalmente as pessoas que possuem Pets, sempre com muita responsabilidade e amor.
+            Com a "Pata Livre", Otavio une sua paixão por animais ao desejo de ajudar, sempre com muita responsabilidade e amor, a todos que buscam cuidado profissional e de qualidade com os seus Pets.
           </p>
         </CardContent>
       </Card>
