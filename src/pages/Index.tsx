@@ -23,7 +23,7 @@ const services = [
 
 const pricing = [
   {
-    title: "Pacotes",
+    title: "Pacotes (Individual)",
     subtitle: "Semanal ou Mensal",
     price: "R$ 30,00",
     per: "/ hora",
@@ -39,7 +39,7 @@ const pricing = [
     popular: false,
   },
   {
-    title: "Avulso",
+    title: "Pacotes (Em grupo)",
     subtitle: "Passeio único",
     price: "R$ 40,00",
     per: "/ hora",
