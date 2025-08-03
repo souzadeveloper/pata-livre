@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { CheckCircle, Dog, Home, ShieldCheck, Star } from "lucide-react";
+import { CheckCircle, Dog, Home, ShieldCheck, Star, Info } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const services = [
