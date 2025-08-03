@@ -1,139 +1,95 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { CheckCircle, Dog, Home, ShieldCheck, Star } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CheckCircle2, Info } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroImage from "../assets/images/hero-image.jpg";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 
 const services = [
   {
-    icon: <ShieldCheck className="h-10 w-10 text-primary" />,
-    title: "Passeios Seguros",
-    description: "Passeios supervisionados e cheios de diversão no Parque Piqueri, garantindo a segurança e o bem-estar do seu pet.",
+    title: "Banho e Tosa",
+    description: "Banhos relaxantes e tosas estilosas para manter seu pet limpo e feliz.",
+    price: "A partir de R$ 80,00",
   },
   {
-    icon: <Dog className="h-10 w-10 text-primary" />,
-    title: "Atividade e Distração",
-    description: "Seu cãozinho gasta energia, socializa e se diverte, voltando para casa mais calmo e feliz.",
+    title: "Tosa Higiênica",
+    description: "Corte de unhas, limpeza de ouvidos e cuidados essenciais para o bem-estar.",
+    price: "A partir de R$ 50,00",
   },
   {
-    icon: <Home className="h-10 w-10 text-primary" />,
-    title: "Home Pet",
-    description: "Cuidamos do seu cão em domicílio, garantindo que ele tenha comida, água e companhia quando você não estiver.",
+    title: "Hidratação",
+    description: "Tratamentos para deixar a pelagem do seu amigo macia, brilhante e saudável.",
+    price: "A partir de R$ 40,00",
   },
 ];
 
-const pricing = [
-  {
-    title: "Pacotes",
-    subtitle: "Semanal ou Mensal",
-    price: "R$ 30,00",
-    per: "/ hora",
-    features: ["Valor por cachorro", "Adicional por cachorro: R$ 10,00/hora"],
-    popular: true,
-  },
-  {
-    title: "Avulso",
-    subtitle: "Passeio único",
-    price: "R$ 40,00",
-    per: "/ hora",
-    features: ["Valor por cachorro", "Adicional por cachorro: R$ 15,00/hora"],
-    popular: false,
-  },
+const features = [
+  "Profissionais qualificados e apaixonados por animais.",
+  "Produtos de alta qualidade, seguros para seu pet.",
+  "Ambiente climatizado, limpo e seguro.",
+  "Atendimento exclusivo e com hora marcada.",
+  "Comodidade de um serviço dentro do seu condomínio.",
 ];
 
 const Index = () => {
   return (
-    <div className="bg-white">
-      {/* Hero Section */}
-      <section className="relative py-20 md:py-32 bg-secondary">
-        <div className="container mx-auto px-4 text-center z-10 relative">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4">
-            Seu melhor amigo em boas mãos
-          </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Oferecemos passeios divertidos e cuidados responsáveis para que seu cão seja sempre feliz e saudável.
-          </p>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section id="services" className="py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">Nossos Serviços</h2>
-          <p className="text-center text-muted-foreground mb-12">Tudo o que seu pet precisa para um dia incrível.</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service) => (
-              <Card key={service.title} className="text-center shadow-lg">
-                <CardHeader>
-                  <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
-                    {service.icon}
-                  </div>
-                  <CardTitle>{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{service.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+    <div className="flex flex-col min-h-screen">
+      <main className="flex-grow">
+        {/* Hero Section */}
+        <section className="relative h-[60vh] bg-cover bg-center text-white flex items-center justify-center" style={{ backgroundImage: `url(${heroImage})` }}>
+          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="relative z-10 text-center p-4">
+            <h1 className="text-4xl md:text-6xl font-bold drop-shadow-lg">Cuidado e Carinho para seu Pet</h1>
+            <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto drop-shadow-md">O melhor serviço de banho e tosa com a comodidade que você e seu melhor amigo merecem, dentro do seu condomínio.</p>
+            <Button asChild size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground">
+              <Link to="/contact">Agende um Horário</Link>
+            </Button>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Pricing Section */}
-      <section id="pricing" className="py-16 bg-secondary">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">Planos e Preços</h2>
-          <p className="text-center text-muted-foreground mb-12">Escolha o plano ideal para você e seu melhor amigo.</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {pricing.map((plan) => (
-              <Card key={plan.title} className={`shadow-xl ${plan.popular ? 'border-primary border-2' : ''}`}>
-                <CardHeader className="text-center">
-                  {plan.popular && <div className="text-sm font-bold text-primary mb-2">MAIS POPULAR</div>}
-                  <CardTitle className="text-2xl">{plan.title}</CardTitle>
-                  <CardDescription>{plan.subtitle}</CardDescription>
-                  <div className="text-4xl font-bold my-4">
-                    {plan.price}
-                    <span className="text-lg font-normal text-muted-foreground">{plan.per}</span>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <ul className="space-y-2">
-                    {plan.features.map((feature) => (
-                      <li key={feature} className="flex items-center">
-                        <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            ))}
+        {/* Services Section */}
+        <section id="services" className="py-16 bg-slate-50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-12">Nossos Serviços</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {services.map((service) => (
+                <Card key={service.title} className="text-center hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle>{service.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground mb-4">{service.description}</p>
+                    <p className="text-lg font-semibold">{service.price}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+            <Alert className="mt-8 max-w-md mx-auto bg-primary/10 border-primary text-primary">
+              <Info className="h-5 w-5" />
+              <AlertDescription className="font-semibold">
+                Valores a combinar para necessidades especiais.
+              </AlertDescription>
+            </Alert>
           </div>
-           <p className="text-center text-muted-foreground mt-8">Valores a combinar para necessidades especiais.</p>
-        </div>
-      </section>
-      
-      {/* Why Us Section */}
-      <section id="why-us" className="py-16">
-        <div className="container mx-auto px-4 text-center">
-           <h2 className="text-3xl font-bold text-gray-800 mb-12">Por que escolher a Pata Livre?</h2>
-           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="flex items-center space-x-4 p-4">
-                <Star className="h-8 w-8 text-accent"/>
-                <div>
-                  <h3 className="text-xl font-semibold text-left">Horários Flexíveis</h3>
-                  <p className="text-muted-foreground text-left">Adaptamos nossos horários para melhor atender à sua rotina e a do seu pet.</p>
-                </div>
-              </div>
-               <div className="flex items-center space-x-4 p-4">
-                <Star className="h-8 w-8 text-accent"/>
-                <div>
-                  <h3 className="text-xl font-semibold text-left">Amor e Responsabilidade</h3>
-                  <p className="text-muted-foreground text-left">Cuidamos do seu melhor amigo com o máximo de carinho, cuidado e segurança.</p>
-                </div>
-              </div>
-           </div>
-        </div>
-      </section>
+        </section>
+
+        {/* Features Section */}
+        <section id="features" className="py-16">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-12">Por que escolher a Pata Livre?</h2>
+            <div className="max-w-2xl mx-auto">
+              <ul className="space-y-4">
+                {features.map((feature, index) => (
+                  <li key={index} className="flex items-start">
+                    <CheckCircle2 className="h-6 w-6 text-primary mr-3 flex-shrink-0 mt-1" />
+                    <span className="text-lg text-muted-foreground">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
   );
 };
