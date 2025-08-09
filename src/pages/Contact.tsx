@@ -1,8 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin } from "lucide-react";
+import { MapPin, MessageSquare } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
-import { WhatsappIcon } from "@/components/WhatsappIcon";
 
 const Contact = () => {
   return (
@@ -20,7 +19,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <WhatsappIcon className="mr-2 h-5 w-5" />
+                <MessageSquare className="mr-2 h-5 w-5" />
                 Conversar no WhatsApp
               </a>
             </Button>
