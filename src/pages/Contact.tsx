@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, MapPin, Info } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
 const Contact = () => {
@@ -14,7 +14,14 @@ const Contact = () => {
           <div className="flex items-center space-x-4">
             <Phone className="h-6 w-6 text-primary" />
             <div className="text-lg">
-              <p className="font-semibold">(11) 94060-4293 (WhatsApp)</p>
+              <a
+                href="https://wa.me/5511940604293"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold hover:underline hover:text-primary transition-colors"
+              >
+                (11) 94060-4293 (WhatsApp)
+              </a>
               <p className="text-sm text-muted-foreground">Falar com Otavio</p>
             </div>
           </div>
