@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, MapPin } from "lucide-react";
+import { MapPin, MessageCircle } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Button } from "@/components/ui/button";
 
 const Contact = () => {
   return (
@@ -10,23 +11,23 @@ const Contact = () => {
           <CardTitle className="text-3xl">Entre em Contato</CardTitle>
           <p className="text-muted-foreground">Agende um horário e saiba mais informações.</p>
         </CardHeader>
-        <CardContent className="space-y-6">
-          <div className="flex items-center space-x-4">
-            <Phone className="h-6 w-6 text-primary" />
-            <div className="text-lg">
+        <CardContent className="space-y-8 pt-6">
+          <div className="flex flex-col items-center space-y-3 text-center">
+            <Button asChild size="lg" className="w-full bg-green-500 hover:bg-green-600 text-white">
               <a
-                href="https://wa.me/5511940604293?text=Gostaria de mais informações sobre o Passeio com Cães"
+                href="https://wa.me/5511940604293?text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Passeio%20com%20C%C3%A3es"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-semibold hover:underline hover:text-primary transition-colors"
               >
-                (11) 94060-4293 (WhatsApp)
+                <MessageCircle className="mr-2 h-5 w-5" />
+                Conversar no WhatsApp
               </a>
-              <p className="text-sm text-muted-foreground">Falar com Otavio</p>
-            </div>
+            </Button>
+            <p className="text-sm text-muted-foreground">Falar com Otavio - (11) 94060-4293</p>
           </div>
-          <div className="flex items-center space-x-4">
-            <MapPin className="h-6 w-6 text-primary" />
+
+          <div className="flex items-start space-x-4">
+            <MapPin className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
             <div className="text-lg">
               <p className="font-semibold">Local de Atendimento</p>
               <p className="text-sm text-muted-foreground">Atendimento exclusivo para moradores do condomínio Scena.</p>
