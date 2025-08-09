@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, MessageCircle } from "lucide-react";
+import { MapPin, MessageCircle, Clock } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 
@@ -31,6 +31,15 @@ const Contact = () => {
             <div className="text-lg">
               <p className="font-semibold">Local de Atendimento</p>
               <p className="text-sm text-muted-foreground">Atendimento exclusivo para moradores do condomínio Scena.</p>
+            </div>
+          </div>
+
+          <div className="flex items-start space-x-4">
+            <Clock className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+            <div className="text-lg">
+              <p className="font-semibold">Horários de Atendimento</p>
+              <p className="text-sm text-muted-foreground">Segunda a Sexta: 14:00 - 17:00</p>
+              <p className="text-sm text-muted-foreground">Sábado: 08:00 - 18:00</p>
             </div>
           </div>
 
