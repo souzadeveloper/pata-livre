@@ -32,6 +32,9 @@ const Header = () => {
           <NavLink to="/about" className={getNavLinkClass}>
             Sobre
           </NavLink>
+          <NavLink to="/gallery" className={getNavLinkClass}>
+            Galeria
+          </NavLink>
           <NavLink to="/contact" className={getNavLinkClass}>
             Contato
           </NavLink>
@@ -56,6 +59,11 @@ const Header = () => {
                 <SheetClose asChild>
                   <NavLink to="/about" className={getMobileNavLinkClass}>
                     Sobre
+                  </NavLink>
+                </SheetClose>
+                <SheetClose asChild>
+                  <NavLink to="/gallery" className={getMobileNavLinkClass}>
+                    Galeria
                   </NavLink>
                 </SheetClose>
                 <SheetClose asChild>
