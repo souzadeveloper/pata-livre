@@ -15,7 +15,7 @@ const Contact = () => {
             <Phone className="h-6 w-6 text-primary" />
             <div className="text-lg">
               <a
-                href="https://wa.me/5511940604293"
+                href="https://wa.me/5511940604293?text=Gostaria de mais informações sobre o Passeio com Cães"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold hover:underline hover:text-primary transition-colors"
