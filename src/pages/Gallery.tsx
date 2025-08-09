@@ -5,7 +5,8 @@ import photo3 from "../assets/photos/foto-03.jpg";
 import photo4 from "../assets/photos/foto-04.jpg";
 import photo5 from "../assets/photos/foto-05.jpg";
 import photo6 from "../assets/photos/foto-06.jpg";
-import { Video } from "lucide-react";
+import video1 from "../assets/videos/video_01.mp4";
+import video2 from "../assets/videos/video_02.mp4";
 
 const photos = [
   { src: photo1, alt: "Cachorro feliz passeando" },
@@ -14,6 +15,11 @@ const photos = [
   { src: photo4, alt: "Outro cachorro feliz no passeio" },
   { src: photo5, alt: "Cachorro em close-up" },
   { src: photo6, alt: "Mais um cachorro feliz" },
+];
+
+const videos = [
+  { src: video1, alt: "Vídeo de passeio com cachorro" },
+  { src: video2, alt: "Outro vídeo de passeio com cachorro" },
 ];
 
 const Gallery = () => {
@@ -45,18 +51,18 @@ const Gallery = () => {
           <div className="mt-16">
             <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Vídeos</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="overflow-hidden rounded-lg shadow-md bg-secondary aspect-video flex flex-col items-center justify-center text-center p-4">
-                <Video className="h-12 w-12 text-muted-foreground mb-2" />
-                <p className="text-muted-foreground font-medium">Vídeo em breve</p>
-              </div>
-              <div className="overflow-hidden rounded-lg shadow-md bg-secondary aspect-video flex flex-col items-center justify-center text-center p-4">
-                <Video className="h-12 w-12 text-muted-foreground mb-2" />
-                <p className="text-muted-foreground font-medium">Vídeo em breve</p>
-              </div>
+              {videos.map((video, index) => (
+                <div key={index} className="overflow-hidden rounded-lg shadow-md">
+                  <video
+                    src={video.src}
+                    controls
+                    className="w-full h-full object-cover aspect-video"
+                  >
+                    Seu navegador não suporta a tag de vídeo.
+                  </video>
+                </div>
+              ))}
             </div>
-            <p className="text-center text-muted-foreground mt-4">
-              Assim que os vídeos estiverem disponíveis, eles aparecerão aqui!
-            </p>
           </div>
         </CardContent>
       </Card>
