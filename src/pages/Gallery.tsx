@@ -3,6 +3,7 @@ import photo1 from "../assets/photos/foto-01.jpg";
 import photo2 from "../assets/photos/foto-02.jpg";
 import photo3 from "../assets/photos/foto-03.jpg";
 import photo4 from "../assets/photos/foto-04.jpg";
+import photo5 from "../assets/photos/foto-05.jpg";
 import { Video } from "lucide-react";
 
 const photos = [
@@ -10,6 +11,7 @@ const photos = [
   { src: photo2, alt: "Cachorro brincando no parque" },
   { src: photo3, alt: "Otavio com um cachorro" },
   { src: photo4, alt: "Outro cachorro feliz no passeio" },
+  { src: photo5, alt: "Cachorro em close-up" },
 ];
 
 const Gallery = () => {
@@ -25,7 +27,7 @@ const Gallery = () => {
         <CardContent>
           <div>
             <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Fotos</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {photos.map((photo, index) => (
                 <div key={index} className="overflow-hidden rounded-lg shadow-md group">
                   <img
