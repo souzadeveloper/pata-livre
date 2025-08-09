@@ -4,6 +4,7 @@ import photo2 from "../assets/photos/foto-02.jpg";
 import photo3 from "../assets/photos/foto-03.jpg";
 import photo4 from "../assets/photos/foto-04.jpg";
 import photo5 from "../assets/photos/foto-05.jpg";
+import photo6 from "../assets/photos/foto-06.jpg";
 import { Video } from "lucide-react";
 
 const photos = [
@@ -12,6 +13,7 @@ const photos = [
   { src: photo3, alt: "Otavio com um cachorro" },
   { src: photo4, alt: "Outro cachorro feliz no passeio" },
   { src: photo5, alt: "Cachorro em close-up" },
+  { src: photo6, alt: "Mais um cachorro feliz" },
 ];
 
 const Gallery = () => {
