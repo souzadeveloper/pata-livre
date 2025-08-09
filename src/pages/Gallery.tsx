@@ -5,8 +5,8 @@ import photo3 from "../assets/photos/foto-03.jpg";
 import photo4 from "../assets/photos/foto-04.jpg";
 import photo5 from "../assets/photos/foto-05.jpg";
 import photo6 from "../assets/photos/foto-06.jpg";
-import video1 from "../assets/videos/video_01.mp4";
-import video2 from "../assets/videos/video_02.mp4";
+import video1 from "../assets/videos/video-01.mp4";
+import video2 from "../assets/videos/video-02.mp4";
 
 const photos = [
   { src: photo1, alt: "Cachorro feliz passeando" },
