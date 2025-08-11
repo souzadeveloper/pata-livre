@@ -15,7 +15,7 @@ const Footer = () => {
               <span className="text-2xl font-bold text-white">Pata Livre</span>
             </Link>
             <p className="text-sm max-w-xs">
-              Sistema completo de cuidados e passeios para o seu melhor amigo.
+              Serviço completo de cuidados e passeios para o seu melhor amigo.
             </p>
           </div>
 
