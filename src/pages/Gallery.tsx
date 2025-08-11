@@ -3,8 +3,6 @@ import photo1 from "../assets/photos/foto-01.jpg";
 import photo2 from "../assets/photos/foto-02.jpg";
 import photo3 from "../assets/photos/foto-03.jpg";
 import photo4 from "../assets/photos/foto-04.jpg";
-import photo5 from "../assets/photos/foto-05.jpg";
-import photo6 from "../assets/photos/foto-06.jpg";
 import video1 from "../assets/videos/video-01.mp4";
 import video2 from "../assets/videos/video-02.mp4";
 
@@ -12,9 +10,7 @@ const photos = [
   { src: photo1, alt: "Cachorro feliz passeando" },
   { src: photo2, alt: "Cachorro brincando no parque" },
   { src: photo3, alt: "Otavio com um cachorro" },
-  { src: photo4, alt: "Outro cachorro feliz no passeio" },
-  { src: photo5, alt: "Cachorro em close-up" },
-  { src: photo6, alt: "Mais um cachorro feliz" },
+  { src: photo4, alt: "Outro cachorro feliz no passeio" }
 ];
 
 const videos = [
