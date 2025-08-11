@@ -10,7 +10,7 @@ const photos = [
   { src: photo1, alt: "Cachorro feliz passeando" },
   { src: photo2, alt: "Cachorro brincando no parque" },
   { src: photo3, alt: "Passeio em grupo" },
-  { src: photo4, alt: "Outros cachorros feliz no passeio" }
+  { src: photo4, alt: "Outro passeio em grupo" }
 ];
 
 const videos = [
