@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { Logo } from "./Logo";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
@@ -25,20 +25,22 @@ const Header = () => {
         <Logo />
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
-          <NavLink to="/" className={getNavLinkClass}>
-            Início
-          </NavLink>
-          <NavLink to="/about" className={getNavLinkClass}>
-            Sobre
-          </NavLink>
-          <NavLink to="/gallery" className={getNavLinkClass}>
-            Galeria
-          </NavLink>
-          <NavLink to="/contact" className={getNavLinkClass}>
-            Contato
-          </NavLink>
-        </nav>
+        <div className="hidden md:flex items-center space-x-8">
+          <nav className="flex items-center space-x-6">
+            <NavLink to="/" className={getNavLinkClass}>
+              Início
+            </NavLink>
+            <NavLink to="/about" className={getNavLinkClass}>
+              Sobre
+            </NavLink>
+            <NavLink to="/gallery" className={getNavLinkClass}>
+              Galeria
+            </NavLink>
+          </nav>
+          <Button asChild>
+            <Link to="/contact">Agendar Horário</Link>
+          </Button>
+        </div>
 
         {/* Mobile Navigation */}
         <div className="md:hidden">
@@ -66,12 +68,14 @@ const Header = () => {
                     Galeria
                   </NavLink>
                 </SheetClose>
-                <SheetClose asChild>
-                  <NavLink to="/contact" className={getMobileNavLinkClass}>
-                    Contato
-                  </NavLink>
-                </SheetClose>
               </nav>
+              <div className="mt-8">
+                <SheetClose asChild>
+                  <Button asChild className="w-full">
+                    <Link to="/contact">Agendar Horário</Link>
+                  </Button>
+                </SheetClose>
+              </div>
             </SheetContent>
           </Sheet>
         </div>
