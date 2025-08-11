@@ -132,6 +132,9 @@ const Index = () => {
           <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             Oferecemos passeios divertidos e cuidados responsáveis para que seu cão seja sempre feliz e saudável.
           </p>
+          <Button asChild size="lg">
+            <Link to="/contact">Agendar Horário</Link>
+          </Button>
         </div>
       </section>
 

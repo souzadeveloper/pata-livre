@@ -1,4 +1,4 @@
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Logo } from "./Logo";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
@@ -25,7 +25,7 @@ const Header = () => {
         <Logo />
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center">
           <nav className="flex items-center space-x-6">
             <NavLink to="/" className={getNavLinkClass}>
               Início
@@ -36,10 +36,10 @@ const Header = () => {
             <NavLink to="/gallery" className={getNavLinkClass}>
               Galeria
             </NavLink>
+            <NavLink to="/contact" className={getNavLinkClass}>
+              Contato
+            </NavLink>
           </nav>
-          <Button asChild>
-            <Link to="/contact">Agendar Horário</Link>
-          </Button>
         </div>
 
         {/* Mobile Navigation */}
@@ -68,14 +68,12 @@ const Header = () => {
                     Galeria
                   </NavLink>
                 </SheetClose>
-              </nav>
-              <div className="mt-8">
                 <SheetClose asChild>
-                  <Button asChild className="w-full">
-                    <Link to="/contact">Agendar Horário</Link>
-                  </Button>
+                  <NavLink to="/contact" className={getMobileNavLinkClass}>
+                    Contato
+                  </NavLink>
                 </SheetClose>
-              </div>
+              </nav>
             </SheetContent>
           </Sheet>
         </div>
