@@ -41,7 +41,7 @@ const Footer = () => {
           {/* Column 3: Support */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-white mb-4">Fale conosco</h3>
-            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white transition-colors">
+            <Button asChild>
               <a
                 href="https://wa.me/5511940604293?text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Passeio%20com%20C%C3%A3es"
                 target="_blank"
