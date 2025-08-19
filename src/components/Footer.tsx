@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           {/* Column 1: About */}
-          <div className="space-y-4 flex flex-col items-center md:items-start">
+          <div className="space-y-2 flex flex-col items-center md:items-start">
             <Link to="/" className="flex items-center gap-3 mb-2">
               <img src={logoSrc} alt="Pata Livre" className="h-[40px] w-auto" />
             </Link>
