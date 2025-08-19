@@ -12,7 +12,6 @@ const Footer = () => {
           <div className="space-y-4 flex flex-col items-center md:items-start">
             <Link to="/" className="flex items-center gap-3 mb-2">
               <img src={logoSrc} alt="Pata Livre" className="h-[40px] w-auto" />
-              <span className="text-2xl font-bold text-white">Pata Livre</span>
             </Link>
             <p className="text-sm max-w-xs">
               Serviço completo de cuidados e passeios para o seu melhor amigo.
