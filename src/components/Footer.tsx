@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           {/* Column 1: About */}
           <div className="space-y-2 flex flex-col items-center md:items-start">
-            <Link to="/" className="flex items-center gap-3 mb-2">
+            <Link to="/" className="flex items-center gap-3">
               <img src={logoSrc} alt="Pata Livre" className="h-[40px] w-auto" />
             </Link>
             <p className="text-sm max-w-xs">
@@ -19,8 +19,8 @@ const Footer = () => {
           </div>
 
           {/* Column 2: Contact */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-white mb-4">Contato</h3>
+          <div className="space-y-2">
+            <h3 className="text-lg font-semibold text-white mb-2">Contato</h3>
             <ul className="space-y-3">
               <li>
                 <a href="tel:+5511940604293" className="flex items-center justify-center md:justify-start gap-3 hover:text-white transition-colors">
@@ -38,8 +38,8 @@ const Footer = () => {
           </div>
 
           {/* Column 3: Support */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-white mb-4">Fale conosco</h3>
+          <div className="space-y-2">
+            <h3 className="text-lg font-semibold text-white mb-2">Fale conosco</h3>
             <Button asChild variant="default">
               <a
                 href="https://wa.me/5511940604293?text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Passeio%20com%20C%C3%A3es"
