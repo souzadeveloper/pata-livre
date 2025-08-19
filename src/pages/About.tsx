@@ -23,6 +23,9 @@ const About = () => {
             Vendo a necessidade de muitos vizinhos que trabalham fora e não têm tempo para passear com seus cãezinhos, Otavio decidiu usar seu tempo livre para oferecer serviços de passeio e cuidados.
           </p>
           <p>
+            Morador do Condomínio Scena, vizinho ao Parque do Piqueri, Otavio escolheu o parque como o local ideal para os passeios. Ele sabe que é um ambiente seguro, onde os pets são muito bem-vindos, além de ser um espaço agradável e perfeito para os cãezinhos se divertirem.
+          </p>
+          <p>
             Ele não só garante a atividade física e a diversão do seu melhor amigo, mas também oferece visitas em domicílio para verificar se está tudo bem, garantindo que seu Pet tenha água, comida e muito carinho na sua ausência.
           </p>
           <p>
