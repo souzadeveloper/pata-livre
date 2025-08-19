@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, MessageCircle, Clock } from "lucide-react";
+import { MapPin, MessageCircle, Clock, Mail } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 
@@ -24,6 +24,16 @@ const Contact = () => {
               </a>
             </Button>
             <p className="text-sm text-muted-foreground">Falar com Otavio - (11) 94060-4293</p>
+          </div>
+
+          <div className="flex items-start space-x-4">
+            <Mail className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+            <div className="text-lg">
+              <p className="font-semibold">E-mail</p>
+              <a href="mailto:otaviotsouza@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                otaviotsouza@gmail.com
+              </a>
+            </div>
           </div>
 
           <div className="flex items-start space-x-4">
