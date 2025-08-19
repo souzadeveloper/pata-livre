@@ -30,7 +30,7 @@ const Contact = () => {
             <MapPin className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
             <div className="text-lg">
               <p className="font-semibold">Local de Atendimento</p>
-              <p className="text-sm text-muted-foreground">Atendimento exclusivo para moradores do condomínio Scena.</p>
+              <p className="text-sm text-muted-foreground">Parque do Piqueri</p>
             </div>
           </div>
 
@@ -46,7 +46,7 @@ const Contact = () => {
 
           <Alert className="bg-primary/10 border-primary text-primary">
             <AlertDescription className="font-semibold text-center">
-              Em breve atendendo a outros condomínios da região.
+              Atendimento exclusivo para condomínios próximos ao Parque do Piqueri.
             </AlertDescription>
           </Alert>
         </CardContent>
