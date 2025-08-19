@@ -40,7 +40,7 @@ const Contact = () => {
             <div className="text-lg">
               <p className="font-semibold">Horários de Atendimento</p>
               <p className="text-sm text-muted-foreground">Segunda a Sexta: 14:00 - 18:00</p>
-              <p className="text-sm text-muted-foreground">Sábado: 08:00 - 18:00</p>
+              <p className="text-sm text-muted-foreground">Sábados e Feriados: 08:00 - 18:00</p>
               <p className="text-sm text-muted-foreground">Demais horários a combinar!!!</p>
             </div>
           </div>
