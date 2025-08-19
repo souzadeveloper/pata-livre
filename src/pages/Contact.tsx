@@ -31,7 +31,7 @@ const Contact = () => {
             <div className="text-lg">
               <p className="font-semibold">Local de Atendimento</p>
               <p className="text-sm text-muted-foreground">Parque do Piqueri</p>
-              <p className="text-sm text-muted-foreground">Espaço Pet (somente para moradores do Condomínio Scena)</p>
+              <p className="text-sm text-muted-foreground">Espaço Pet (para moradores do Condomínio Scena)</p>
             </div>
           </div>
 
