@@ -68,6 +68,11 @@ const testimonials = [
     author: "Ana Leticia",
     avatarFallback: "AL",
   },
+  {
+    quote: "Minha filha de 4 patas foi uma das ganhadoras do passeio. O Otávio é um graça, super jovem mas muito responsável, atencioso e carinho. A Alicia amou o passeio e mamãe ficou muito feliz. ❤️",
+    author: "Sheila",
+    avatarFallback: "S",
+  },
 ];
 
 const whyUsItems = [
@@ -250,7 +255,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">O que nossos Clientes dizem</h2>
           <p className="text-center text-muted-foreground mb-12">A opinião de quem confia no nosso trabalho.</p>
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="shadow-lg">
                 <CardContent className="p-8 flex flex-col items-center text-center">
