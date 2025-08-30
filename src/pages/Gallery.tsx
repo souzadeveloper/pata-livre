@@ -10,6 +10,7 @@ import photo8 from "../assets/photos/foto-08.jpg";
 import video1 from "../assets/videos/video-01.mp4";
 import video2 from "../assets/videos/video-02.mp4";
 import video3 from "../assets/videos/video-03.mp4";
+import video4 from "../assets/videos/video-04.mp4";
 
 const photos = [
   { src: photo1, alt: "Cachorro feliz passeando" },
@@ -26,6 +27,7 @@ const videos = [
   { src: video1, alt: "Vídeo de passeio com cachorro" },
   { src: video2, alt: "Outro vídeo de passeio com cachorro" },
   { src: video3, alt: "Passeio em grupo" },
+  { src: video4, alt: "Mais um vídeo de passeio" },
 ];
 
 const Gallery = () => {
