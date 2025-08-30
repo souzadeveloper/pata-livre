@@ -69,7 +69,7 @@ const testimonials = [
     avatarFallback: "AL",
   },
   {
-    quote: "Minha filha de 4 patas foi uma das ganhadoras do passeio. O Otávio é um graça, super jovem mas muito responsável, atencioso e carinho. A Alicia amou o passeio e mamãe ficou muito feliz. ❤️",
+    quote: "Minha filha de 4 patas foi uma das ganhadoras do passeio. O Otávio é um graça, super jovem mas muito responsável, atencioso e carinhoso. A Alicia amou o passeio e mamãe ficou muito feliz. ❤️",
     author: "Sheila",
     avatarFallback: "S",
   },
