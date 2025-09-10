@@ -47,7 +47,7 @@ const pricing = [
   {
     title: "Pacotes (Em grupo)",
     subtitle: "Semanal ou Mensal",
-    price: "R$ 40,00",
+    price: "R$ 50,00",
     per: "/ hora",
     features: ["Valor para até 03 (três) Pets do mesmo dono", "Válido apenas para Raças Pequenas"],
     popular: false,
@@ -55,7 +55,7 @@ const pricing = [
   {
     title: "Avulso (Em grupo)",
     subtitle: "Passeio único",
-    price: "R$ 50,00",
+    price: "R$ 60,00",
     per: "/ hora",
     features: ["Valor para até 03 (três) Pets do mesmo dono", "Válido apenas para Raças Pequenas"],
     popular: false,
