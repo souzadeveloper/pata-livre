@@ -57,7 +57,7 @@ const pricing = [
     subtitle: "Passeio único",
     price: "R$ 60,00",
     per: "/ hora",
-    features: ["Valor para até 03 (três) Pets do mesmo dono", "Válido apenas para Raças Pequenas"],
+    features: ["Valor para até 03 (três) Pets do mesmo dono", "Válido para Raças Pequenas"],
     popular: false,
   },
 ];
@@ -145,7 +145,7 @@ const Index = () => {
             >
               <svg
                 aria-hidden="true"
-                className="h-6 w-6 mr-2"
+                className="h-6 w-6"
                 viewBox="0 0 448 512"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
