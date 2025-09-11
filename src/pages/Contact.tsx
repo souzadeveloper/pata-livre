@@ -22,7 +22,7 @@ const Contact = () => {
               >
                 <svg
                   aria-hidden="true"
-                  className="h-5 w-5"
+                  className="h-6 w-6 mr-2"
                   viewBox="0 0 448 512"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
